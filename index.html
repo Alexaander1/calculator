@@ -53,19 +53,19 @@
             max-width: 400px; 
             width: 100%;
         }
-        .blockOne{
+        .table{
             display: flex;
+        }
+        .blockOne{
             max-width: 400px;
             width: 100%;
-            align-items: center;
-            justify-content: space-between;
+        }
+        .blockOne.two {
+            margin-left: 65px;
         }
        
         .y, .res{
             padding-right: 10px;
-        }
-        .two{
-            margin-top: 20px;
         }
         .btn{
             margin-top: 25px;
@@ -86,22 +86,24 @@
             <div class="header_main">
                 <select name="pets" class="pet-select">
                     <option value="">Выберите процент для расчета</option>
-                    <option value="10">10%</option>
-                    <option value="20">20%</option>
-                    <option value="30">30%</option>
-                    <option value="40">40%</option>
-                    <option value="50">50%</option>
+                    <option value="10">90%-10%</option>
+                    <option value="20">80%-20%</option>
+                    <option value="30">70%-30%</option>
+                    <option value="40">60%-40%</option>
+                    <option value="50">50%-50%</option>
                   </select>
                   
                  
                 <input type="number" id="inp" placeholder="Изначальная сумма" value="" />
-                <div class="blockOne">
-                    <div class="nameOne">Зароботок  парикмахера</div>
-                    <div class="y">0</div>
-                </div>
-                <div class="blockOne two">
-                    <div class="nameOne">Процент салона</div>
-                    <div class="res">0</div>
+                <div class="table">
+                    <div class="blockOne">
+                        <div class="nameOne"></div>
+                        <div class="y">0</div>
+                    </div>
+                    <div class="blockOne two">
+                        <div class="nameOne nam eTwo"></div>
+                        <div class="res">0</div>
+                    </div>
                 </div>
 
                 <button class="btn">Подсчитать</button>
